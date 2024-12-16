@@ -1,0 +1,43 @@
+[build-system]
+requires = ['setuptools>=61.0']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'pybluecat'
+version = '0.1.2'
+description = 'Python wrapper around Bluecat APIs'
+dependencies = [
+    'dnspython'
+]
+classifiers = [
+    'Development Status :: 3 - Alpha',
+    'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3.6',
+    'License :: Freely Distributable',
+    'Natural Language :: English',
+]
+authors = [
+    {name = 'Forrest Throesch', email = 'fmthroesch@gmail.com'},
+    {name = 'Joe Pobuda', email = 'joe@pobudz.net'},
+]
+maintainers = [
+    {name = "Joe Pobuda", email = "joe@pobudz.net"}
+]
+readme = 'README.md'
+
+[project.scripts]
+bluecat = 'pybluecat.tools.cli:main'
+bluecat-assinv-search = 'pybluecat.tools.assinv_search:main'
+bluecat-dhcp-request = 'pybluecat.tools.rundeck_dhcp_request:main'
+bluecat-dhcp-bulk-request = 'pybluecat.tools.rundeck_dhcp_bulk_request:main'
+bluecat-dhcp-update = 'pybluecat.tools.rundeck_dhcp_update:main'
+bluecat-dhcp-delete = 'pybluecat.tools.rundeck_dhcp_delete:main'
+bluecat-dhcp-search = 'pybluecat.tools.rundeck_dhcp_search:main'
+bluecat-vip-request = 'pybluecat.tools.vips:main'
+bluecat-search = 'pybluecat.tools.search:main'
+bluecat-network-enumerate = 'pybluecat.tools.enumerate_networks:main'
+bluecat-static-request = 'pybluecat.tools.static_request:main'
+
+[project.urls]
+'Github' = 'https://github.com/ForrestT/pybluecat'
+'Fork' = 'https://github.com/p-b-d-z/pybluecat'

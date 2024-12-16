@@ -1,0 +1,20 @@
+# Compiled python modules
+*.pyc
+
+# Swap files
+*.swp
+
+# Setuptools distribution folder
+/dist/
+
+# Virtual environment
+/venv/
+
+# Idea files
+/.idea/
+
+# Python egg metadata, regenerated from source files by setuptools
+/*.egg-info
+
+# Development environment configuration
+.env
